@@ -40,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		4834A79D1B9439B900DFB005 /* saml-ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "saml-ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4834A7A11B9439B900DFB005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4834A7A11B9439B900DFB005 /* saml-ios-app-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "saml-ios-app-Info.plist"; sourceTree = "<group>"; };
 		4834A7A21B9439B900DFB005 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4834A7A41B9439B900DFB005 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4834A7A51B9439B900DFB005 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		4834A7A01B9439B900DFB005 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4834A7A11B9439B900DFB005 /* Info.plist */,
+				4834A7A11B9439B900DFB005 /* saml-ios-app-Info.plist */,
 				4834A7A21B9439B900DFB005 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -421,7 +421,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "saml-ios-app/Info.plist";
+				INFOPLIST_FILE = "saml-ios-app/saml-ios-app-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,7 +436,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "saml-ios-app/Info.plist";
+				INFOPLIST_FILE = "saml-ios-app/saml-ios-app-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
