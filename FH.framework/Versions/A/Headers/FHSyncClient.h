@@ -1,15 +1,24 @@
-//
-//  NSString+Validation.h
-//  fh-ios-sdk
-//
-//  Copyright (c) 2012-2015 FeedHenry. All rights reserved.
-//
+/*
+ * Copyright Red Hat, Inc., and individual contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 #import "FH.h"
 #import "FHSyncConfig.h"
 #import "FHSyncNotificationMessage.h"
 #import "FHSyncDelegate.h"
-
+#import "FHSyncDataset.h"
 /**
  The sync client is part of the FeedHenry data sync framework. It provides a mechanism to manage
  bi-direction data synchronization.
@@ -20,12 +29,17 @@
 /** Get the singleton instance of the sync client */
 + (FHSyncClient *)getInstance;
 
-/** Initialize the sync client with the sync configuration
+/** Initializer for unit testing only.
 
  @param config The sync configuration
  */
-- (instancetype)initWithConfig:(FHSyncConfig *)config;
+- (instancetype)initWithConfig:(FHSyncConfig *)config AndDataSet:(FHSyncDataset*)dataSetInjected;
 
+/** Initialize the sync client with the sync configuration
+ 
+ @param config The sync configuration
+ */
+- (instancetype)initWithConfig:(FHSyncConfig *)config;
 /**
  Use sync client to manage a dataset with id dataId.
 
@@ -138,4 +152,10 @@
  */
 - (void)destroy;
 
+/**
+ Causes the sync framework to schedule for immediate execution a sync.
+ 
+ @param dataSetId The id of the dataset
+ */
+- (void)forceSync:(NSString*)dataSetId;
 @end

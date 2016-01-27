@@ -1,4 +1,5 @@
 /*
+ * JBoss, Home of Professional Open Source.
  * Copyright Red Hat, Inc., and individual contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,14 +14,30 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+#import <Foundation/Foundation.h>
+
+#import "FHDefines.h"
+
+#pragma mark - core
+#import "FH.h"
+#import "FHConfig.h"
+
+#pragma mark - request
+#import "FHResponse.h"
+#import "FHResponseDelegate.h"
 #import "FHAct.h"
+#import "FHActRequest.h"
+#import "FHCloudRequest.h"
+#import "FHCloudProps.h"
+#import "FHAuthRequest.h"
 
-/**
- Calling cloud side functions on FeedHenry
- */
-@interface FHActRequest : FHAct
+#pragma mark - sync
+#import "FHSyncClient.h"
+#import "FHSyncConfig.h"
+#import "FHDataManager.h"
+#import "FHSyncDelegate.h"
+#import "FHSyncNotificationMessage.h"
 
-/** The cloud side function name */
-@property (nonatomic, strong) NSString *remoteAction;
-
-@end
+#pragma mark - utils
+#import "FHJSON.h"
