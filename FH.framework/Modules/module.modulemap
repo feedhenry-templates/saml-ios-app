@@ -1,5 +1,5 @@
 framework module FH {
-  umbrella header "FH.h"
+  umbrella header "FeedHenry.h"
 
   export *
   module * { export * }
