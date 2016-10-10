@@ -1,5 +1,7 @@
 # saml-ios-app [![Build Status](https://travis-ci.org/feedhenry-templates/saml-ios-app.png)](https://travis-ci.org/feedhenry-templates/saml-ios-app)
 
+> Swift version is available [here](https://github.com/feedhenry-templates/saml-ios-swift).
+
 Author: Corinne Krych   
 Level: Intermediate  
 Technologies: Objective-C, iOS, RHMAP, CocoaPods.
