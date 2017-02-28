@@ -15,9 +15,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.name.text = self.nameModel;
-    self.email.text = self.emailModel;
-    self.session.text = self.sessionModel;
+    if (![[NSNull null] isEqual:self.nameModel]) {
+        self.name.text = self.nameModel;
+    }
+    if (![[NSNull null] isEqual:self.emailModel]) {
+        self.email.text = self.emailModel;
+    }
+    if (![[NSNull null] isEqual:self.sessionModel]) {
+        self.session.text = self.sessionModel;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
