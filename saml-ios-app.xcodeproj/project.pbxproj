@@ -13,12 +13,12 @@
 		4834A7A91B9439B900DFB005 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7A81B9439B900DFB005 /* ViewController.m */; };
 		4834A7AC1B9439B900DFB005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4834A7AA1B9439B900DFB005 /* Main.storyboard */; };
 		4834A7AE1B9439B900DFB005 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4834A7AD1B9439B900DFB005 /* Images.xcassets */; };
-		4834A7B11B9439B900DFB005 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4834A7AF1B9439B900DFB005 /* LaunchScreen.xib */; };
 		4834A7CF1B9455CC00DFB005 /* FHSAMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4834A7CE1B9455CC00DFB005 /* FHSAMLViewController.m */; };
 		4834A7D21B94700600DFB005 /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4834A7D11B94700600DFB005 /* fhconfig.plist */; };
 		48A3E6BE1B97057F00BDA6C9 /* LoggedInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3E6BD1B97057F00BDA6C9 /* LoggedInViewController.m */; };
 		48B97EAB1BB3DC4900AF26FC /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B97EAA1BB3DC4900AF26FC /* libxml2.dylib */; };
 		48B97EAD1BB3DC5900AF26FC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B97EAC1BB3DC5900AF26FC /* libz.dylib */; };
+		8898F0F31E659532008123CD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8898F0F21E659532008123CD /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,6 @@
 		4834A7A81B9439B900DFB005 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4834A7AB1B9439B900DFB005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4834A7AD1B9439B900DFB005 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4834A7B01B9439B900DFB005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4834A7CD1B9455CC00DFB005 /* FHSAMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHSAMLViewController.h; path = OAuth/FHSAMLViewController.h; sourceTree = "<group>"; };
 		4834A7CE1B9455CC00DFB005 /* FHSAMLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHSAMLViewController.m; path = OAuth/FHSAMLViewController.m; sourceTree = "<group>"; };
 		4834A7D11B94700600DFB005 /* fhconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fhconfig.plist; sourceTree = "<group>"; };
@@ -41,6 +40,7 @@
 		48B97EAC1BB3DC5900AF26FC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4910D9AE7B65608D22185799 /* Pods-saml-ios-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saml-ios-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-saml-ios-app/Pods-saml-ios-app.debug.xcconfig"; sourceTree = "<group>"; };
 		62BDF5A0BD50A13064F88C12 /* Pods-saml-ios-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saml-ios-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-saml-ios-app/Pods-saml-ios-app.release.xcconfig"; sourceTree = "<group>"; };
+		8898F0F21E659532008123CD /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D08850AB8C0E00746C625772 /* libPods-saml-ios-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-saml-ios-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,8 +89,8 @@
 				48A3E6BD1B97057F00BDA6C9 /* LoggedInViewController.m */,
 				4834A7AA1B9439B900DFB005 /* Main.storyboard */,
 				4834A7AD1B9439B900DFB005 /* Images.xcassets */,
-				4834A7AF1B9439B900DFB005 /* LaunchScreen.xib */,
 				4834A7A01B9439B900DFB005 /* Supporting Files */,
+				8898F0F21E659532008123CD /* Launch Screen.storyboard */,
 			);
 			path = "saml-ios-app";
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 			files = (
 				4834A7D21B94700600DFB005 /* fhconfig.plist in Resources */,
 				4834A7AC1B9439B900DFB005 /* Main.storyboard in Resources */,
-				4834A7B11B9439B900DFB005 /* LaunchScreen.xib in Resources */,
+				8898F0F31E659532008123CD /* Launch Screen.storyboard in Resources */,
 				4834A7AE1B9439B900DFB005 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,14 +272,6 @@
 				4834A7AB1B9439B900DFB005 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4834A7AF1B9439B900DFB005 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4834A7B01B9439B900DFB005 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -366,7 +358,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -405,7 +397,7 @@
 				INFOPLIST_FILE = "saml-ios-app/saml-ios-app-Info.plist";
 				LD_MAP_FILE_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.feedhenry.$(PRODUCT_NAME:rfc1034identifier)";
