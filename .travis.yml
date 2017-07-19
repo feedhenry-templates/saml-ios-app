@@ -4,6 +4,9 @@ xcode_workspace: saml-ios-app.xcworkspace
 xcode_scheme: saml-ios-app
 xcode_sdk: iphonesimulator
 
+before_install:
+  - travis_wait pod repo update --silent
+
 notifications:
   irc: "irc.freenode.org#feedhenry"
 
@@ -13,4 +16,3 @@ script:
 branches:
   only:
     - master
-    - xcode8

@@ -85,12 +85,23 @@
             FHSAMLViewController *controller = [[FHSAMLViewController alloc] initWithURL:loginUrl];
             [[[[UIApplication sharedApplication] keyWindow] rootViewController] presentViewController:controller animated:YES completion:nil];
         } AndFailure:^(FHResponse *failed) {
-            NSLog(@"EXEC FAILUE =%@", failed);
+            NSLog(@"EXEC FAILUE =%@", failed.rawResponseAsString);
+            NSString * message = [failed.parsedResponse objectForKey:@"msg"];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login fails"
+                                                            message:message
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
         }];
     } AndFailure:^(FHResponse *response) {
         NSLog(@"initialize fail, %@", response.rawResponseAsString);
+        NSString * message = @"Please fill in fhconfig.plist file.";
+        if (response.parsedResponse) {
+            message = [response.parsedResponse objectForKey:@"msg"];
+        }
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"FH init fails"
-                                                        message:@"Make sure you've configured fhconfig."
+                                                        message:message
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
