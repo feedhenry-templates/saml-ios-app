@@ -87,12 +87,9 @@
         } AndFailure:^(FHResponse *failed) {
             NSLog(@"EXEC FAILUE =%@", failed.rawResponseAsString);
             NSString * message = [failed.parsedResponse objectForKey:@"msg"];
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login fails"
-                                                            message:message
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:nil];
-            [alert show];
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Login fails" message:message preferredStyle:UIAlertControllerStyleAlert];
+            [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+            [self presentViewController:alertController animated:YES completion:nil];
         }];
     } AndFailure:^(FHResponse *response) {
         NSLog(@"initialize fail, %@", response.rawResponseAsString);
@@ -100,12 +97,9 @@
         if (response.parsedResponse) {
             message = [response.parsedResponse objectForKey:@"msg"];
         }
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"FH init fails"
-                                                        message:message
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"FH init fails" message:message preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+        [self presentViewController:alertController animated:YES completion:nil];
         [activityIndicator stopAnimating];
         activityIndicator.hidden = true;
     }];
