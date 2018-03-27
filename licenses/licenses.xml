@@ -9,8 +9,8 @@
             <version>5.0.0</version>
             <licenses>
                 <license>
-                    <name>BSD 2-clause \"Simplified\" License</name>
-                    <url>http://www.opensource.org/licenses/BSD-2-Clause</url>
+                    <name>Apache License 2.0</name>
+                    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
                 </license>
             </licenses>
         </dependency>
