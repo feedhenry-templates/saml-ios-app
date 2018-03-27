@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<licenseSummary>
+    <project>saml-ios-app</project>
+    <version>0.0.0</version>
+    <license>Apache-2.0</license>
+    <dependencies>
+        <dependency>
+            <packageName>fh-ios-sdk</packageName>
+            <version>5.0.0</version>
+            <licenses>
+                <license>
+                    <name>BSD 2-clause \"Simplified\" License</name>
+                    <url>http://www.opensource.org/licenses/BSD-2-Clause</url>
+                </license>
+            </licenses>
+        </dependency>
+    </dependencies>
+</licenseSummary>
